@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&family=VT323&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+}
+
 nav{
     background-color: #ed01ff;
     background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
@@ -51,3 +60,4 @@ nav{
     height: 15px;
     width: 15px;
 }
+
