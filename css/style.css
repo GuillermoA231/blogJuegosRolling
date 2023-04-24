@@ -41,6 +41,7 @@ nav{
 }
 
 .busquedaNav{
+    
     box-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 12px #ff00de , 0 0 10px #ff00de , 0 0 10px #ff00de , 0 0 20px #ff00de ;
 }
 
@@ -60,4 +61,3 @@ nav{
     height: 15px;
     width: 15px;
 }
-
