@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=VT323&display=swap');
+
 
 *{
   margin: 0;
@@ -61,3 +63,37 @@ nav{
     width: 15px;
 }
 
+.card{
+    background: #0009;
+}
+
+.card-title{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+
+.carousel-caption{
+    background: #000C;
+    position: absolute;
+    bottom: 0;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item img{
+    max-width: 600px;
+}
+
+#index-main{
+    background: url('../img/bg-index.jpg');
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
