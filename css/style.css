@@ -82,6 +82,7 @@ nav{
 .carousel-caption{
     background: #000C;
     position: absolute;
+    max-width: 600px;
     bottom: 0;
 }
 
