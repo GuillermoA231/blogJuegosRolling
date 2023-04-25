@@ -24,9 +24,12 @@ function agregarComentario(e){
 
 function obtenerFechaHora() {
     let fechaActual = new Date();
-    const dia = fechaActual.getDay(),
-    mes = fechaActual.getMonth(),
-    anio = fechaActual.getFullYear() 
+    let dia = fechaActual.getDay();
+    let mes = fechaActual.getMonth();
+    let anio = fechaActual.getFullYear();
+    
+    console.log(mes)
+    console.log(dia)
 
     // jueves x de Abril del x
     const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -52,5 +55,5 @@ function obtenerFechaHora() {
     horaActual = horaActual ? horaActual : 12; */
     //horaActual > 12? horaActual -=12: horaActual;
 
-    return `${horaActual}:${minutosActuales}:${segundosActuales} - ${dia}/${mes}/${anio}`;
+    return `${horaActual}:${minutosActuales}:${segundosActuales} - ${fechaActual.getDate()}/${fechaActual.getMonth()+1}/${fechaActual.getFullYear()}`;
 }
