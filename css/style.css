@@ -187,3 +187,9 @@ nav{
     transition-delay: 0.75s;
 }
 /* END boton neon estilo *
+
+/* Ocultar elemntos */
+.oculto,
+.imgOculta {
+	display: none;
+}
