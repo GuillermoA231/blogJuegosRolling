@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=VT323&display=swap');
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Electrolize', sans-serif;
+  font-family: "Electrolize", sans-serif;
+}
+#body-articulo {
+  overflow-x: hidden;
+  background: url("../images/pagina-principal/example.jpg") no-repeat
+    center / cover;
+  z-index: 1;
+  position: relative;
+}
+
+#body-articulo::before {
+  background: url("../images/pagina-principal/example.jpg") no-repeat
+    center / cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(10px);
+  content: "";
 }
 
 nav{
