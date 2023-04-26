@@ -188,3 +188,9 @@ nav{
 .imgOculta {
 	display: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .btn-burguer{
+        display: none;
+    }
+}
