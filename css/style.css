@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Electrolize', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
 }
 
 nav{
@@ -109,8 +109,6 @@ nav{
     background-size: cover;
 }
 
-
-
 /* boton neon estilo */
 .btn-neon{
     position: relative;
@@ -179,6 +177,13 @@ nav{
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #a945c7);
+}
+
+.error-404-titulo{
+    filter: drop-shadow(black 5px 5px 10px);
+    font-family: 'VT323', monospace;
+    font-size: 6em;
+    text-transform: uppercase;
 }
 
 .btn-neon:hover #span4 {
