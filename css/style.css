@@ -213,3 +213,13 @@ nav{
         display: none;
     }
 }
+
+/* feature-footer */
+.logo {
+  font-family: "Monoton", cursive;
+}
+
+.redes-iconos > a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
