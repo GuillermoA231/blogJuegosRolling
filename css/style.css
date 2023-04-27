@@ -214,6 +214,16 @@ nav{
 	display: none;
 }
 
+.seccionJuegos {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjetaDeJuego {
+    max-width: 350px;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 1024px) {
     .btn-burguer{
         display: none;
