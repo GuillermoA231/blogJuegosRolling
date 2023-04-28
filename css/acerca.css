@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Electrolize", sans-serif;
+}
+
+nav {
+    background-color: #ed01ff;
+    background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
+    font-family: 'Electrolize', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.logoNabvar {
+    font-size: 25px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Monoton', cursive;
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+h1{
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+    box-shadow: 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+}
+
+.nombre-integrante{
+    text-shadow:  0 0 40px #0fff0d, 0 0 70px #0fff0d, 0 0 80px #0fff0d, 0 0 100px #0fff0d;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.logoNabvar:hover,
+.nav-link:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+.btn-burguer {
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-burguer {
+        display: none;
+    }
+}
+
+.foto-perfil {
+    filter: grayscale(100%);
+    max-height: 200px;
+    max-width: 200px;
+    transition: 1s;
+}
+
+.foto-perfil {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.foto-perfil:hover {
+    box-shadow: 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+    filter: grayscale(0%);
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.redes a i:hover {
+    color: #0fff0d;
+}
+
+.acerca-de-nosotros-bg{
+    background: url('./img/arcade-paradise-wallpaper.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
