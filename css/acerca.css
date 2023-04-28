@@ -94,7 +94,7 @@ h1{
 }
 
 .acerca-de-nosotros-bg{
-    background: url('./img/arcade-paradise-wallpaper.jpg');
+    background: url('../img/arcade-paradise-wallpaper.jpg');
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
