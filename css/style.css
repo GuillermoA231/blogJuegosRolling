@@ -3,10 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Electrolize', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Electrolize", sans-serif;
+}
+#body-articulo {
+  overflow-x: hidden;
+  background: url("../images/pagina-principal/example.jpg") no-repeat
+    center / cover;
+  z-index: 1;
+  position: relative;
+}
+
+#body-articulo::before {
+  background: url("../images/pagina-principal/example.jpg") no-repeat
+    center / cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(10px);
+  content: "";
 }
 
 nav{
@@ -52,16 +72,11 @@ nav{
 }
 
 .btn-burguer{
+    border-radius: 10px;
     margin: 2px;
     padding: 2px;
-    background-color: #67ff01a6;
-    color: rgba(255,255,255,1);
+    background-color: transparent;
     box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px #ff00de , 0 0 20px #ff00de , 0 0 20px #ff00de;
-}
-
-.navbar-toggler-icon{
-    height: 15px;
-    width: 15px;
 }
 
 .card{
@@ -204,4 +219,20 @@ nav{
 .oculto,
 .imgOculta {
 	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-burguer{
+        display: none;
+    }
+}
+
+/* feature-footer */
+.logo {
+  font-family: "Monoton", cursive;
+}
+
+.redes-iconos > a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
