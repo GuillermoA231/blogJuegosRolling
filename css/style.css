@@ -63,8 +63,13 @@ nav{
 }
 
 .busquedaNav{
-    
+    border-radius: 6px;
+    padding: 0.5em;
+}
+
+.busquedaNav:focus{
     box-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 12px #ff00de , 0 0 10px #ff00de , 0 0 10px #ff00de , 0 0 20px #ff00de ;
+    transition: 0.5s;
 }
 
 .logoNabvar:hover, .nav-link:hover{
@@ -97,14 +102,10 @@ nav{
 
 .carousel-caption{
     background: #000C;
-    position: absolute;
     max-width: 600px;
     bottom: 0;
 }
 
-.carousel-item{
-    position: relative;
-}
 
 .carousel-item img{
     max-width: 600px;
