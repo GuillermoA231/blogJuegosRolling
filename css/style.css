@@ -179,11 +179,18 @@ nav{
     background: linear-gradient(360deg, transparent, #a945c7);
 }
 
-.error-404-titulo{
-    filter: drop-shadow(black 5px 5px 10px);
-    font-family: 'VT323', monospace;
-    font-size: 15em;
+.error-404-titulo {
+    filter: drop-shadow(black 5px 5px 5px);
     text-transform: uppercase;
+}
+
+.error-404-titulo h2{
+    font-size: 12em;
+}
+
+.error-404-titulo p{
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .btn-neon:hover #span4 {
