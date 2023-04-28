@@ -112,6 +112,10 @@ section {
   margin-right: 5px;
 }
 
+.comentario{
+  background: #000A;
+}
+
 
 @media (max-width: 1535px) {
   header {
