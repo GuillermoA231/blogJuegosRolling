@@ -3,52 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Electrolize", sans-serif;
 }
+
 #body-articulo {
-  overflow-x: hidden;
-  background: url("../images/pagina-principal/example.jpg") no-repeat
-    center / cover;
-  z-index: 1;
-  position: relative;
+    overflow-x: hidden;
+    background: url("../images/pagina-principal/example.jpg") no-repeat center / cover;
+    z-index: 1;
+    position: relative;
 }
 
 #body-articulo::before {
-  background: url("../images/pagina-principal/example.jpg") no-repeat
-    center / cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  filter: blur(10px);
-  content: "";
+    background: url("../images/pagina-principal/example.jpg") no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+    content: "";
 }
 
-nav, footer{
+nav,
+footer {
     background-color: #ed01ff;
     background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
     font-family: 'Electrolize', sans-serif;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
-footer{
+
+footer {
     background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 5%, #090202 95%, #0fff0d 100%);
-    text-shadow: 0 0 5px rgba(255,255,255,0.3) , 0 0 10px rgba(255,255,255,0.3) , 0 0 15px rgba(255,255,255,0.3) , 0 0 20px #ff00de , 0 0 35px #ff00de , 0 0 40px #ff00de , 0 0 50px #ff00de ;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
 }
 
 
-.logoNabvar, .logoFooter{
+.logoNabvar,
+.logoFooter {
     font-size: 25px;
     display: inline-block;
     -webkit-box-sizing: border-box;
@@ -57,71 +59,71 @@ footer{
     text-decoration: none;
     padding: 10px;
     font-family: 'Monoton', cursive;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.busquedaNav{
+.busquedaNav {
     border-radius: 6px;
     padding: 0.5em;
 }
 
-.busquedaNav:focus{
-    box-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 12px #ff00de , 0 0 10px #ff00de , 0 0 10px #ff00de , 0 0 20px #ff00de ;
+.busquedaNav:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 12px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 20px #ff00de;
     transition: 0.5s;
 }
 
-.logoNabvar:hover, .nav-link:hover{
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+.logoNabvar:hover,
+.nav-link:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
 }
 
-.btn-burguer{
+.btn-burguer {
     border-radius: 10px;
     margin: 2px;
     padding: 2px;
     background-color: transparent;
-    box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px #ff00de , 0 0 20px #ff00de , 0 0 20px #ff00de;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
 }
 
-.card{
+.card {
     background: #0009;
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transition: 0.3s;
     transform: scale(1.05);
 }
 
-.card-title{
+.card-title {
     font-family: 'Rajdhani', sans-serif;
     font-family: 'VT323', monospace;
 }
 
 
-.carousel-caption{
+.carousel-caption {
     background: #000C;
     max-width: 600px;
     bottom: 0;
 }
 
-
-.carousel-item img{
+.carousel-item img {
     max-width: 600px;
 }
 
-.pixel-heart{
+.pixel-heart {
     padding: 3px;
     width: 1.5em;
 }
 
-.retrowave-parallax-bg{
+.retrowave-parallax-bg {
     background: url('../img/bg-index.jpg');
     min-height: 500px;
     background-attachment: fixed;
@@ -131,7 +133,7 @@ footer{
 }
 
 /* boton neon estilo */
-.btn-neon{
+.btn-neon {
     position: relative;
     color: #fff;
     letter-spacing: 4px;
@@ -200,7 +202,7 @@ footer{
     background: linear-gradient(360deg, transparent, #a945c7);
 }
 
-.error-404-titulo{
+.error-404-titulo {
     filter: drop-shadow(black 5px 5px 10px);
     font-family: 'VT323', monospace;
     font-size: 15em;
@@ -212,12 +214,13 @@ footer{
     transition: 1s;
     transition-delay: 0.75s;
 }
+
 /* END boton neon estilo *
 
 /* Ocultar elemntos */
 .oculto,
 .imgOculta {
-	display: none;
+    display: none;
 }
 
 .seccionJuegos {
@@ -230,20 +233,30 @@ footer{
     flex-wrap: wrap;
 }
 
+#juegoNoEncontrado {
+    max-width: 100%;
+    border-radius: 10px;
+    border-top: #a945c7 solid 3px;
+    border-bottom: #0fff0d solid 3px;
+    border-left: #090202 solid 1px;
+    border-right: #090202 solid 1px;
+}
+
 @media screen and (min-width: 1024px) {
-    .btn-burguer{
+    .btn-burguer {
         display: none;
     }
 }
 
 @media screen and (min-width: 1024px) {
-/* feature-footer */
-.logo {
-  font-family: "Monoton", cursive;
-}
 
-.redes-iconos > a:hover {
-  color: #ff00de;
-  text-shadow: 0 10px 15px #ff8df07c,0 -10px 15px #85ff8f7c;
-}
+    /* feature-footer */
+    .logo {
+        font-family: "Monoton", cursive;
+    }
+
+    .redes-iconos>a:hover {
+        color: #ff00de;
+        text-shadow: 0 10px 15px #ff8df07c, 0 -10px 15px #85ff8f7c;
+    }
 }
