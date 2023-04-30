@@ -1,42 +1,51 @@
+import resumenValidacion from "./helper.js";
+
 let inputNombreUsuario = document.getElementById('inputNombreUsuario');
 let TextAreaComentario = document.getElementById('TextAreaComentario');
 let formularioComentario = document.querySelector('form');
 const comentarios = document.getElementById("comentarios");
-let fechaActual = new Date();
+alert = document.getElementById('alerta');
 
-formularioComentario.addEventListener('submit', agregarComentario);
+formularioComentario.addEventListener('submit', prepararComentario);
 
-function agregarComentario(e){
+function prepararComentario(e){
     e.preventDefault();
-    const usuario = inputNombreUsuario.value.trim();
-    const comentario = TextAreaComentario.value.trim();
-    if(comentario !== "" && usuario !== ""){
-        const listItem = document.createElement("li"); // Crear un nuevo elemento li
-        listItem.className = "list-group-item mt-2 animate__animated animate__lightSpeedInLeft"; // Agregar clases de Bootstrap
-        listItem.innerHTML = `<h5><strong>${usuario}</strong> ${comentario}</h5> <span class="text-secondary">${obtenerFechaHora()}</span><hr>`;
-        comentarios.appendChild(listItem); // Agregar el elemento li a la lista
-        inputNombreUsuario.value = ""; // Limpiar el input
-        TextAreaComentario.value = ""; // Limpiar el input
-        console.log(`${usuario}: ${comentario}`)
-    }
+    crearComentario()
 }
 
 
+function crearComentario(){
+    const usuario = inputNombreUsuario.value.trim();
+    const comentario = TextAreaComentario.value.trim();
+
+    const resumen = resumenValidacion(usuario, comentario);
+
+    mostrarMensajeError(resumen);
+
+    if(resumen.length === 0){
+        const listItem = document.createElement("li"); // Crear un nuevo elemento li
+        listItem.className = "list-group-item mt-2 animate__animated animate__lightSpeedInLeft text-light p-3 my-2 rounded comentario"; // Agregar clases de Bootstrap
+        listItem.innerHTML = `<h5><strong>${usuario}:</strong><br> ${profanityCleaner.clean(comentario, { placeholder: '*' })}</h5> <span class="text-secondary">${obtenerFechaHora()}</span>`;
+        comentarios.appendChild(listItem); // Agregar el elemento li a la lista
+        limpiarFormulario();
+    }
+}
+
+function mostrarMensajeError(resumen){
+    if(resumen.length > 0){
+        alert.className = "alert  alert-danger mt-3";
+        alert.innerHTML = resumen;
+    }else{
+        alert.className = "alert  alert-danger mt-3 d-none";
+    }
+}
+
+function limpiarFormulario(){
+    formularioComentario.reset();
+}
+
 function obtenerFechaHora() {
     let fechaActual = new Date();
-    let dia = fechaActual.getDay();
-    let mes = fechaActual.getMonth();
-    let anio = fechaActual.getFullYear();
-    
-    console.log(mes)
-    console.log(dia)
-
-    // jueves x de Abril del x
-    const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-    const monthsOfYear = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-
-    //fecha.innerHTML = `${daysOfWeek[fechaActual.getDay()]} ${fechaActual.getDate()} de ${monthsOfYear[fechaActual.getMonth()]} del ${fechaActual.getFullYear()}`
-
     let horaActual = fechaActual.getHours(),
         minutosActuales = fechaActual.getMinutes(),
         segundosActuales = fechaActual.getSeconds();
@@ -50,10 +59,6 @@ function obtenerFechaHora() {
     if (horaActual < 10) {
         horaActual = '0' + horaActual;
     }
-    /* horaActual >= 12? mediodia.innerHTML = 'PM' : mediodia.innerHTML = 'AM';
-    horaActual = horaActual % 12;
-    horaActual = horaActual ? horaActual : 12; */
-    //horaActual > 12? horaActual -=12: horaActual;
-
+    
     return `${horaActual}:${minutosActuales}:${segundosActuales} - ${fechaActual.getDate()}/${fechaActual.getMonth()+1}/${fechaActual.getFullYear()}`;
 }
