@@ -200,19 +200,30 @@ footer{
     background: linear-gradient(360deg, transparent, #a945c7);
 }
 
-.error-404-titulo{
-    filter: drop-shadow(black 5px 5px 10px);
-    font-family: 'VT323', monospace;
-    font-size: 15em;
-    text-transform: uppercase;
-}
-
 .btn-neon:hover #span4 {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
 }
-/* END boton neon estilo *
+/* END boton neon estilo */
+
+.error-404-titulo {
+    filter: drop-shadow(black 5px 5px 5px);
+    text-transform: uppercase;
+}
+
+.error-404-titulo h2{
+    font-size: 12em;
+}
+
+.error-404-titulo p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#btn-volver{
+    max-width: 10em;
+}
 
 /* Ocultar elemntos */
 .oculto,
@@ -252,11 +263,10 @@ footer{
 @media screen and (min-width: 1024px) {
 /* feature-footer */
 .logo {
-  font-family: "Monoton", cursive;
+    font-family: "Monoton", cursive;
 }
 
 .redes-iconos > a:hover {
   color: #ff00de;
   text-shadow: 0 10px 15px #ff8df07c,0 -10px 15px #85ff8f7c;
-}
 }
