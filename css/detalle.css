@@ -23,20 +23,6 @@
   font-weight: 700;
   color: white;
 }
-.navlist {
-  display: flex;
-}
-.navlist a {
-  color: white;
-  margin-left: 60px;
-  font-size: 15px;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: all 0.55s ease;
-}
-.navlist a:hover {
-  border-bottom: 2px solid white;
-}
 #menu-icon {
   color: white;
   font-size: 30px;
@@ -52,9 +38,9 @@ body {
   height: 100vh;
   width: 100%;
 }
-main {
-  background: rgba(51, 51, 51, 0.2);
-  backdrop-filter: blur(8px);
+.fondo-body {
+  background: rgba(51, 51, 51, 0.2) !important;
+  backdrop-filter: blur(8px) !important;
 }
 .hero {
   height: 100%;
@@ -118,18 +104,6 @@ section {
 
 
 @media (max-width: 1535px) {
-  header {
-    padding: 15px 3%;
-    transition: 0.2s;
-  }
-  .icons {
-    padding: 0 3%;
-    transition: 0.2s;
-  }
-  .scroll-down {
-    right: 3%;
-    transition: 0.2s;
-  }
 }
 @media (max-width: 1460px) {
   section {
@@ -157,7 +131,6 @@ section {
     transition: 0.2s;
   }
   .hero-text {
-    padding-top: 115px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,19 +153,6 @@ section {
 @media (max-width: 990px) {
   #menu-icon {
     display: block;
-  }
-  .navlist {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 300px;
-    height: 40vh;
-    background-color: #3869cc;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-    transition: all 0.55s ease;
   }
 }
 @media (max-width: 680px) {
