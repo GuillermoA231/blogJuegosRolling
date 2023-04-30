@@ -194,6 +194,13 @@ nav{
     background: linear-gradient(360deg, transparent, #a945c7);
 }
 
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* END boton neon estilo */
+
 .error-404-titulo {
     filter: drop-shadow(black 5px 5px 5px);
     text-transform: uppercase;
@@ -208,12 +215,9 @@ nav{
     font-weight: bold;
 }
 
-.btn-neon:hover #span4 {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+#btn-volver{
+    max-width: 10em;
 }
-/* END boton neon estilo *
 
 /* Ocultar elemntos */
 .oculto,
@@ -229,10 +233,10 @@ nav{
 
 /* feature-footer */
 .logo {
-  font-family: "Monoton", cursive;
+    font-family: "Monoton", cursive;
 }
 
-.redes-iconos > a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+.redes-iconos>a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
