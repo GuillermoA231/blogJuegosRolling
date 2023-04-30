@@ -40,7 +40,7 @@ nav {
 
 h1{
     text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
-    box-shadow: 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+    box-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
 }
 
 .nombre-integrante{
