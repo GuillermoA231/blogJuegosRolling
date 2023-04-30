@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Electrolize", sans-serif;
+    font-family: "Electrolize", sans-serif;
 }
 #body-articulo {
   overflow-x: hidden;
@@ -29,7 +29,7 @@
   content: "";
 }
 
-nav{
+nav, footer{
     background-color: #ed01ff;
     background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
     font-family: 'Electrolize', sans-serif;
@@ -42,8 +42,13 @@ nav{
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+footer{
+    background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 5%, #090202 95%, #0fff0d 100%);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3) , 0 0 10px rgba(255,255,255,0.3) , 0 0 15px rgba(255,255,255,0.3) , 0 0 20px #ff00de , 0 0 35px #ff00de , 0 0 40px #ff00de , 0 0 50px #ff00de ;
+}
 
-.logoNabvar{
+
+.logoNabvar, .logoFooter{
     font-size: 25px;
     display: inline-block;
     -webkit-box-sizing: border-box;
@@ -63,8 +68,13 @@ nav{
 }
 
 .busquedaNav{
-    
+    border-radius: 6px;
+    padding: 0.5em;
+}
+
+.busquedaNav:focus{
     box-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 12px #ff00de , 0 0 10px #ff00de , 0 0 10px #ff00de , 0 0 20px #ff00de ;
+    transition: 0.5s;
 }
 
 .logoNabvar:hover, .nav-link:hover{
@@ -97,14 +107,10 @@ nav{
 
 .carousel-caption{
     background: #000C;
-    position: absolute;
     max-width: 600px;
     bottom: 0;
 }
 
-.carousel-item{
-    position: relative;
-}
 
 .carousel-item img{
     max-width: 600px;
@@ -225,18 +231,42 @@ nav{
 	display: none;
 }
 
+.seccionJuegos {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjetaDeJuego {
+    max-width: 350px;
+    flex-wrap: wrap;
+}
+
+#juegoNoEncontrado {
+    max-width: 100%;
+    border-radius: 10px;
+    border-top: #a945c7 solid 3px;
+    border-bottom: #0fff0d solid 3px;
+    border-left: #090202 solid 1px;
+    border-right: #090202 solid 1px;
+}
+
+.card-footer {
+    max-height: 60px;
+}
+
 @media screen and (min-width: 1024px) {
     .btn-burguer{
         display: none;
     }
 }
 
+@media screen and (min-width: 1024px) {
 /* feature-footer */
 .logo {
     font-family: "Monoton", cursive;
 }
 
-.redes-iconos>a:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+.redes-iconos > a:hover {
+  color: #ff00de;
+  text-shadow: 0 10px 15px #ff8df07c,0 -10px 15px #85ff8f7c;
 }

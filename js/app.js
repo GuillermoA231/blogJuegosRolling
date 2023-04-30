@@ -6,7 +6,7 @@ const juegoNoEncontrado = document.querySelector('#juegoNoEncontrado');
 document.addEventListener('keyup', e => {
 	if(e.key === 'Escape') e.target.value = '';
 	if (e.target.matches('#inputBuscar')) {
-		document.querySelectorAll('.tarjetaDeJuego').forEach(juego => {
+		juegosTotales.forEach(juego => {
 			juego.children[1].children[0].innerHTML.toLowerCase().includes(e.target.value.toLowerCase()) ? juego.classList.remove('oculto') : juego.classList.add('oculto');
 		});
 		const juegosOcultos = document.querySelectorAll('.oculto');
