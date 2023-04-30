@@ -89,7 +89,14 @@ h1{
     transition: 0.5s;
 }
 
-.redes a i:hover {
+.redes a i{
+    color: white;
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.redes a i:hover{
     color: #0fff0d;
 }
 
