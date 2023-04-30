@@ -71,20 +71,12 @@ h1{
 }
 
 .foto-perfil {
-    filter: grayscale(100%);
     max-height: 200px;
     max-width: 200px;
-    transition: 1s;
-}
-
-.foto-perfil {
-    filter: grayscale(100%);
-    transition: 1s;
 }
 
 .foto-perfil:hover {
     box-shadow: 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #0fff0d, 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
-    filter: grayscale(0%);
     scale: 1.05;
     transition: 0.5s;
 }
