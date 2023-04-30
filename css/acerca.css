@@ -38,6 +38,11 @@ nav {
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+hr{
+    color:white;
+    border: solid 2px white;
+}
+
 h1{
     text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
     box-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
