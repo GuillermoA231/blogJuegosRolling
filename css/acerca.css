@@ -82,6 +82,8 @@ h1{
 .foto-perfil {
     max-height: 200px;
     max-width: 200px;
+    scale: 1;
+    transition: 0.5s;
 }
 
 .foto-perfil:hover {
@@ -123,4 +125,8 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
+}
+
+.bg-secundario{
+    background-color: rgba(0, 0, 0, 0.5);
 }
