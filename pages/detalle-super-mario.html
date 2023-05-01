@@ -85,7 +85,7 @@
         <article class="py-5">
           <section class="hero">
             <div class="hero-text">
-              <h5>#2O Trending</h5>
+              <h5>#6 Trending</h5>
               <h4 class="text-white-50">Nintendo Entertainment System</h4>
               <h1 class="text-white mb-1 fw-bolder titulo">
                 SUPER MARIO BROS
@@ -133,14 +133,66 @@
                 <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
                 <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
                 <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
+                <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
+                <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
                 </p>
               </div>
               <p>
-                Super Mario Bros. es un juego icónico que revolucionó muchos elementos del juego y con un gameplay simple y repetitivo pero muy entretenido, no le veo otra puntuacion mas adecuada de 3 corazones.
+                Super Mario Bros. es un juego icónico que revolucionó muchos elementos del juego y con un gameplay simple y muy entretenido, no le veo otra puntuacion mas adecuada de 5 corazones.<br><b class="text-success">TODO EL MUNDO LO DEBE DE JUGAR!</b>
               </p>
 
               <a href="#" class="volver">VOLVER</a>
             </div>
+          </section>
+        </article>
+        
+        <article>
+          <section class="container">
+            <h3 class="text-light">Dejanos tu comentario</h3>
+            <form action="" class="row m-3" data-bs-theme="dark">
+              <div class="col-3 input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-person-circle"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingrese nombre de usuario"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  id="inputNombreUsuario"
+                  minlength="2"
+                  maxlength="30"
+                />
+              </div>
+              <div class="col-3 input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-text"></i>
+                </span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  id="TextAreaComentario"
+                  placeholder="Deje su comentario aquí ..."
+                  minlength="5"
+                  maxlength="300"
+                ></textarea>
+              </div>
+              <div
+                class="alert d-none alert-danger mt-3"
+                role="alert"
+                id="alerta"
+              ></div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-primary mb-3">
+                  Comentar
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="container">
+            <h3 class="text-light">Comentarios</h3>
+            <ul id="comentarios"></ul>
           </section>
         </article>
       </main>
@@ -180,10 +232,15 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- script para censurar malas palabras -->
+    <script src="https://cdn.jsdelivr.net/npm/profanity-cleaner@0.0.3/dist/profanity-cleaner.min.js"></script>
+    <!-- profanity-cleaner -->
     <!-- Scroll Reveal efecto -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- app.js archivo -->
-    <script src="../js/detalle.js"></script>
+    <script src="../js/detalle.js" type="module"></script>
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/comentarios.js" type="module"></script>
   </body>
 </html>
