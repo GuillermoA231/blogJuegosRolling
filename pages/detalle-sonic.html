@@ -33,10 +33,43 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/detalle.css" />
   </head>
+
   <body>
+    <div class="modal" tabindex="-1" id="anuncio">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="fondo-body">
       <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
@@ -81,18 +114,19 @@
         </nav>
       </header>
       <main>
-        <article class="py-5">
+        <article>
           <section class="hero">
             <div class="hero-text">
               <h5>#43 Trending</h5>
-              <h4 class="text-white-50">SEGA Master System</h4>
+              <h4 class="text-white-50">Sega System Entertaiment</h4>
               <h1 class="text-white mb-1 fw-bolder titulo">
                 SONIC THE HEDGEHOG
               </h1>
               <p class="text-white mb-4 h3">
-                Lanzado en 1991, este juego icónico combina acción veloz,
-                niveles desafiantes y un soundtrack icónico que te transportará
-                a la era dorada de los videojuegos.
+                Lanzado en 1989 por Jordan Mechner. Adéntrate en un mundo de
+                peligros, acertijos y habilidades de combate en el clásico
+                Prince of Persia, un juego que aún hoy en día sigue siendo un
+                referente en la historia de los videojuegos.
               </p>
               <a href="#veredicto-final" class="ctaa"
                 ><i class="bi bi-play-fill"></i>Veredicto Final</a
@@ -100,7 +134,7 @@
             </div>
             <div class="hero-img text-center">
               <img
-                src="https://cdn.thegamesdb.net/images/thumb/boxart/front/3016-1.jpg"
+                src="../img/sonic-the-hedgehog.jpg"
                 alt=""
                 width="400"
                 height="600"
@@ -110,7 +144,7 @@
           <section class="resenia py-4">
             <div class="text-white h3 text-center">
               <p>
-                uno de los clásicos más icónicos de la historia de los
+                Uno de los clásicos más icónicos de la historia de los
                 videojuegos. Personalmente, recuerdo pasar horas jugando Sonic
                 en los salones arcades, saltando y corriendo a través de niveles
                 emocionantes mientras trataba de vencer al malvado y bigotudo
@@ -149,54 +183,124 @@
                   id="articulo-puntuacion"
                   class="lead display-1 text-success m-0"
                 >
-                  <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
-                  <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
-                  <img src="../img/pixel-heart.svg" alt="" height="75px" width="75px">
+                  <img
+                    src="../img/pixel-heart.svg"
+                    alt=""
+                    height="75px"
+                    width="75px"
+                  />
+                  <img
+                    src="../img/pixel-heart.svg"
+                    alt=""
+                    height="75px"
+                    width="75px"
+                  />
+                  <img
+                    src="../img/pixel-heart.svg"
+                    alt=""
+                    height="75px"
+                    width="75px"
+                  />
+                  <img
+                    src="../img/pixel-heart.svg"
+                    alt=""
+                    height="75px"
+                    width="75px"
+                  />
                 </p>
               </div>
               <p>
-                ¡Sonic the Hedgehog merece 3 corazones de puntuación perfecta!
+                ¡Sonic the Hedgehog merece 4 corazones de puntuación perfecta!
                 Este clásico juego de plataformas es conocido por su velocidad y
                 emoción, lo que lo convierte en una experiencia divertida y
                 desafiante ademas de no tener puntos realmente negativos para el
                 jugador. Si eres un fanático de los juegos de plataformas.
-                <br />
-                <b class="text-success">MUST HAVE!</b>
+                <br /><b class="text-success">MUST HAVE!</b>
               </p>
-
               <a href="#" class="volver">VOLVER</a>
             </div>
+          </section>
+        </article>
+        <article>
+          <section class="container">
+            <h3 class="text-light">Dejanos tu comentario</h3>
+            <form action="" class="row m-3" data-bs-theme="dark">
+              <div class="col-3 input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-person-circle"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingrese nombre de usuario"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  id="inputNombreUsuario"
+                  minlength="2"
+                  maxlength="30"
+                />
+              </div>
+              <div class="col-3 input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-text"></i>
+                </span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  id="TextAreaComentario"
+                  placeholder="Deje su comentario aquí ..."
+                  minlength="5"
+                  maxlength="300"
+                ></textarea>
+              </div>
+              <div
+                class="alert d-none alert-danger mt-3"
+                role="alert"
+                id="alerta"
+              ></div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-primary mb-3">
+                  Comentar
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="container">
+            <h3 class="text-light">Comentarios</h3>
+            <ul id="comentarios"></ul>
           </section>
         </article>
       </main>
       <footer class="bg-black text-white text-center container-fluid">
         <div class="row">
-            <div class="box">
-              <h2 class="logoFooter mt-2">TIC-TAC-TOE</h2>
-            </div>
-            <div
-              class="d-flex justify-content-center text-center align-items-center"
-            >
-              <p class="h4">Siguenos en nuestras otras redes:</p>
-              <li class="redes-iconos d-flex justify-content-around">
-                <a href="../pages/error404.html"
-                  ><i
-                    class="bi bi-facebook text-secondary fs-1 px-xl-3 px-1 redes-iconos"
-                  ></i
-                ></a>
-                <a href="../pages/error404.html"
-                  ><i
-                    class="bi bi-instagram text-secondary fs-1 px-xl-3 px-1 redes-iconos"
-                  ></i
-                ></a>
-                <a href="../pages/error404.html"
-                  ><i
-                    class="bi bi-twitter text-secondary fs-1 px-xl-3 px-1 redes-iconos"
-                  ></i
-                ></a>
-              </li>
-            </div>
-            <li><p>&copy;2023 Todos los derechos reservados</p></li>
+          <div class="box">
+            <h2 class="logoFooter mt-2">TIC-TAC-TOE</h2>
+          </div>
+          <div
+            class="d-flex justify-content-center text-center align-items-center"
+          >
+            <p class="h4">Siguenos en nuestras otras redes:</p>
+            <li class="redes-iconos d-flex justify-content-around">
+              <a href="../pages/error404.html"
+                ><i
+                  class="bi bi-facebook text-white fs-1 px-xl-3 px-1 redes-iconos"
+                ></i
+              ></a>
+              <a href="../pages/error404.html"
+                ><i
+                  class="bi bi-instagram text-white fs-1 px-xl-3 px-1 redes-iconos"
+                ></i
+              ></a>
+              <a href="../pages/error404.html"
+                ><i
+                  class="bi bi-twitter text-white fs-1 px-xl-3 px-1 redes-iconos"
+                ></i
+              ></a>
+            </li>
+          </div>
+          <li>
+            <p>&copy;2023 Todos los derechos reservados</p>
+          </li>
         </div>
       </footer>
     </div>
@@ -205,10 +309,15 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- script para censurar malas palabras -->
+    <script src="https://cdn.jsdelivr.net/npm/profanity-cleaner@0.0.3/dist/profanity-cleaner.min.js"></script>
+    <!-- profanity-cleaner -->
     <!-- Scroll Reveal efecto -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- app.js archivo -->
-    <script src="../js/detalle.js"></script>
+    <script src="../js/detalle.js" type="module"></script>
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/comentarios.js" type="module"></script>
   </body>
 </html>
