@@ -9,7 +9,7 @@
     font-family: "Electrolize", sans-serif;
 }
 
-nav {
+nav, footer{
     background-color: #ed01ff;
     background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
     font-family: 'Electrolize', sans-serif;
@@ -47,7 +47,7 @@ hr{
     border: solid 2px white;
 }
 
-h1{
+h1{ 
     text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
     box-shadow:  0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
 }
@@ -110,3 +110,14 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+footer{
+    background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 5%, #090202 95%, #0fff0d 100%);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3) , 0 0 10px rgba(255,255,255,0.3) , 0 0 15px rgba(255,255,255,0.3) , 0 0 20px #ff00de , 0 0 35px #ff00de , 0 0 40px #ff00de , 0 0 50px #ff00de ;
+}
+
+@media screen and (min-width: 1024px) {
+    /* feature-footer */
+    .logo {
+        font-family: "Monoton", cursive;
+    }
