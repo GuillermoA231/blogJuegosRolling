@@ -126,7 +126,6 @@ footer {
   transition: 0.3s;
   transform: scale(1.05);
 }
-
 .card-title {
   font-family: "Rajdhani", sans-serif;
   font-family: "VT323", monospace;
@@ -240,15 +239,18 @@ footer {
 
 .error-404-titulo h2 {
   font-size: 12em;
+  font-family: "VT323", monospace;
 }
 
 .error-404-titulo p {
   font-size: 2em;
   font-weight: bold;
+  font-family: "VT323", monospace;
 }
 
 #btn-volver {
   max-width: 10em;
+  font-family: "VT323", monospace;
 }
 
 /* Ocultar elemntos */
