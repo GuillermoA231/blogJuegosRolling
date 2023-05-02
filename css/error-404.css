@@ -1,0 +1,20 @@
+.error-404-titulo {
+    filter: drop-shadow(black 5px 5px 5px);
+    text-transform: uppercase;
+}
+
+.error-404-titulo h2 {
+    font-size: 12em;
+    font-family: "VT323", monospace;
+}
+
+.error-404-titulo p {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "VT323", monospace;
+}
+
+#btn-volver {
+    max-width: 10em;
+    font-family: "VT323", monospace;
+}
