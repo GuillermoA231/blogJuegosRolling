@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Electrolize", sans-serif;
+    list-style: none;
+}
+
+nav, footer{
+    background-color: #ed01ff;
+    background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 22%, #090202 87%, #0fff0d 100%);
+    font-family: 'Electrolize', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.logoNabvar, .logoFooter {
+    font-size: 25px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Monoton', cursive;
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+hr{
+    color:white;
+    border: solid 2px white;
+}
+
+h1{ 
+    text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+}
+
+.nombre-integrante{
+    font-family: 'VT323', monospace;
+    text-shadow:  0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.logoNabvar:hover,
+.nav-link:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+.btn-burguer {
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 20px #ff00de;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-burguer {
+        display: none;
+    }
+}
+
+.foto-perfil {
+    max-height: 200px;
+    max-width: 200px;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.foto-perfil:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.fantasma-clyde:hover{
+    filter: drop-shadow(0 0 10px #ff6600);
+}
+
+.fantasma-inky:hover{
+    filter: drop-shadow(0 0 10px #00ffde);
+}
+
+.fantasma-pinky:hover{
+    filter: drop-shadow(0 0 10px #d582da);
+}
+
+.fantasma-blinky:hover{
+    filter: drop-shadow(0 0 10px #ff0000);
+}
+
+.redes a i{
+    color: white;
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.redes a i:hover{
+    color: #0fff0d;
+}
+
+.acerca-de-nosotros-bg{
+    background-image: url('../img/arcade-paradise-wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.bg-secundario{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    background-image: linear-gradient(180deg, #ed01ff 0%, #0d0606 5%, #090202 95%, #0fff0d 100%);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3) , 0 0 10px rgba(255,255,255,0.3) , 0 0 15px rgba(255,255,255,0.3) , 0 0 20px #ff00de , 0 0 35px #ff00de , 0 0 40px #ff00de , 0 0 50px #ff00de ;
+}
+
+.redes-iconos > a:hover {
+    color: #ff00de;
+    text-shadow: 0 10px 15px #ff8df07c,0 -10px 15px #85ff8f7c;
+}
